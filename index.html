@@ -14,14 +14,27 @@
         <h1> Atmospheric Appetites </h1>
     </header>
     <nav>
-        <a href=""> All Recipes </a>
-        <a href=""> About Us </a>
-        <a href=""> Partners </a>
-    </nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><img src="./assets/images/logo.png2" ></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#about-us" class="waves-effect waves-light btn">About Us <i class="material-icons left">cloud</i></a></li>        
+        <li><a href="#recipe-api" class="waves-effect waves-light btn">Recipe Finder <i class="material-icons left">cloud</i></a></li>
+            <li><a href="#contact-us" class="waves-effect waves-light btn">Contact Us <i class="material-icons left">cloud</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    
     <a>
-    <h3> About Us </h3>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptates earum tempora debitis sint laborum nemo laudantium fugit modi repellendus perferendis recusandae eius, sapiente voluptatem blanditiis placeat error eum consequatur?</p>
-    <div>
+        <section>
+            <div id="about-us">
+                <h3> About Us </h3>
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptates earum tempora debitis sint laborum nemo laudantium fugit modi repellendus perferendis recusandae eius, sapiente voluptatem blanditiis placeat error eum consequatur?
+                </p>
+            </div>
+        </section>
+        <section>
+    <div id="recipe-api">
         <div id = "weather-side">
             <input type="text">
             <button id = "search">Search</button>
@@ -42,11 +55,12 @@
             <p> Step 5: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quia aliquid excepturi ea, doloremque tempore autem tempora perspiciatis numquam exercitationem possimus hic repellat inventore saepe, esse animi distinctio officiis iusto.
             </p>
         </div>
+    </section>
         <hr>
     </div>
     </a>
     <footer>
-        <h3 id="contact"> Contact Us </h3>
+        <h3 id="contact-us"> Contact Us </h3>
         <a href=""> LocalHarvestCo@gmail.com </a>
     </footer>
     <script>"https://code.jquery.com/jquery-3.6.0.min.js"</script>
