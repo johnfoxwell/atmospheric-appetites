@@ -27,6 +27,14 @@ getButton.addEventListener("click", function(event) {
             displayWeather.append(myCity);
             displayWeather.append(myDesc);
             displayWeather.append("The temperature in " + city + " is " + data.main.temp +" degress");
+
+            if (data.main.temp > 60) {
+                console.log("hot")
+                return "hot";
+            } else {
+                console.log("cold")
+                return "cold";
+            }  
         });
     }
     
