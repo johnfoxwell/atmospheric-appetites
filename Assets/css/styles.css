@@ -1,3 +1,8 @@
+body {
+  margin: 0% 2%;
+  background: #D0D3D4;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -9,10 +14,45 @@ nav {
 }
 
 .brand-logo {
-display: inline-block;
-height:fit-content;
+  display: inline-block;
+  margin: 2px 0px 0px 10px;
 }
 
+#about-us {
+  color: neutral;
+  margin: 0px;
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+.indent {
+  display: block;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+#recipe-finder-header {
+
+}
+
+.input-location {
+  
+}
+
+#your-search {
+  border: 4px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.search-box {
+  max-width: 500px;
+}
+
+#weather-display-header {
+  color: black;
+}
 
 
 
@@ -107,16 +147,15 @@ height:fit-content;
 
 footer {
     text-align: center;
-
 }
 
 .social-media {
-    display: inline-flex;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
+  display: inline-flex;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
 }
 
 #email {
-    
+  
 }

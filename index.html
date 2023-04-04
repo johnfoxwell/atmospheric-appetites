@@ -15,7 +15,7 @@
     </header>
     <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo"><img src="./assets/images/logo.png2" ></a>
+          <a href="#" class="brand-logo"><img src="./assets/images/logo2.png" ></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#about-us" class="waves-effect waves-light btn">About Us <i class="material-icons left">cloud</i></a></li>        
         <li><a href="#recipe-api" class="waves-effect waves-light btn">Recipe Finder <i class="material-icons left">cloud</i></a></li>
@@ -29,23 +29,30 @@
             <div id="about-us">
                 <h3> About Us </h3>
                 <p> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptates earum tempora debitis sint laborum nemo laudantium fugit modi repellendus perferendis recusandae eius, sapiente voluptatem blanditiis placeat error eum consequatur?
+                    <span class="indent">We are a small team of students who are working on our first project.</span> We each come from different backgrounds, but are using our newly found skills to work together and create an innovative new website. We spent time going over different ideas of something unique that we could do, and this stood out to all of us.
+                </p>
+                <p>
+                    <span class="indent">Have you ever been trying to find a recipe and there is either too many ideas or not enough ideas?</span> Well this site aims to fix that problem for you. We have created a recipe finder that uses your input location to figure out what dish is right for you in that moment. We grab the current weather for your given area, and then we have a set of dishes that it could randomly generate for you based of off the temperature outside. For a cold day, you could be looking to make a nice warm stew. On a hot day, you might want something light and refreshing. This site will help you find a great meal that goes perfectly with how your body may be feeling.
                 </p>
             </div>
         </section>
         <section>
+            <h2 class="recipe-finder-header">Recipe Finder</h2>
     <div id="recipe-api">
         <div id = "weather-side">
-            <input id="your-search" type="text">
+        <form>
+            <span class="input-location"> Input Location:</span>
+            <input id="your-search" type="text" name="search" class="search-box">
             <button id = "search">Search</button>
-            <h3> Weather Display </h3>
+        </form>
+            <h3 id="weather-display-header"> Weather Display </h3>
         </div>
         <div id = "food-image">
-            <img src="https://www.budgetbytes.com/wp-content/uploads/2019/10/Baked-Ziti-mixed-scoop.jpg" alt="Pan of baked zit">
+            <img src="https://www.budgetbytes.com/wp-content/uploads/2019/10/Baked-Ziti-mixed-scoop.jpg" alt="Pan of baked ziti">
         </div>
         <div>
             <p> Step 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit at molestiae consequuntur beatae laborum maiores, ratione rem, natus delectus eaque expedita omnis cum harum aut accusamus ea aspernatur perferendis.
-                Step 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ea voluptatem, praesentium tenetur non at sunt, laudantium pariatur quia expedita rerum perspiciatis impedit fugiat facilis soluta? Facere nihil ex tempora. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit est facilis enim magni similique sint eveniet voluptatem, ratione odit officiis atque dicta maiores, eius eos illum quisquam porro nihil ullam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, dignissimos maxime maiores nihil mollitia asperiores odit cum suscipit minima. Unde officiis ipsa atque odit optio cum molestias velit minus beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est omnis ratione velit aliquid tenetur praesentium illum dolorum totam perferendis ipsum ipsa sint impedit qui, odio modi. Voluptatem unde nulla veniam.                
+                Step 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ea voluptatem, praesentium tenetur non at sunt, laudantium pariatur quia expedita rerum perspiciatis impedit fugiat facilis soluta? Facere nihil ex tempora. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit est facilis enim magni similique sint eveniet voluptatem, ratione odit officiis atque dicta maiores, eius eos illum quisquam porro nihil ullam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, dignissimos maxime maiores nihil mollitia asperiores odit cum suscipit minima. Unde officiis ipsa atque odit optio cum molestias velit minus beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est omnis ratione velit aliquid tenetur praesentium illum dolorum totam perferendis ipsum ipsa sint impedit qui, odio modi. Voluptatem unde nulla veniam.              
             </p>
         </div>
     </section>
