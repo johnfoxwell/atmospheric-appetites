@@ -157,5 +157,17 @@ footer {
 }
 
 #email {
-  
+    font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+
+}
+@media screen and (max-width: 992px) {
+    body,
+     {
+        flex-direction: column;
+    }
+
+    .nav-wrapper {
+        justify-content: flex-start;
+    }
 }
