@@ -7,7 +7,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
-    /* justify-content: space-between; */
   }
 
   .brand-logo-header {
@@ -45,17 +44,16 @@ nav {
     text-align: center;
 }
 
-#recipe-finder-header {
-
+.recipe-finder-header {
+  font-family: 'Delicious Handrawn', cursive;
 }
 
 .input-location {
-  
+  font-family: 'Delicious Handrawn', cursive;
 }
 
 #recipe-api {
   display: flex;
-  justify-content: space-between;
 }
 
 #weather-side {
@@ -198,7 +196,7 @@ font-family: 'Dancing Script', cursive;
 font-family: 'Great Vibes', cursive;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 1200px){
   body {
       margin: auto;
     }
@@ -210,4 +208,9 @@ font-family: 'Great Vibes', cursive;
   .recipe-finder-header {
       color: green;
   }
+}
+
+.logo-image-header {
+  width: 50%; /* Adjust this value as needed */
+  height: auto;
 }
