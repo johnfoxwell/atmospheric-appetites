@@ -28,6 +28,7 @@ nav {
   margin: 0px;
   padding-left: 500px;
   padding-right: 500px;
+  font-size: 200%;
 }
 
 .indent {
@@ -162,9 +163,7 @@ footer {
 }
 
 #email {
-    font-family: 'Dancing Script', cursive;
-font-family: 'Great Vibes', cursive;
-
+  
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
     body {
