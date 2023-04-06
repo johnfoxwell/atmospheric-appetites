@@ -166,13 +166,18 @@ footer {
 font-family: 'Great Vibes', cursive;
 
 }
-@media screen and (max-width: 992px) {
-    body,
-     {
-        flex-direction: column;
-    }
+@media screen and (min-width: 481px) and (max-width: 768px){
+    body {
+        margin: auto;
+      }
 
-    .nav-wrapper {
-        justify-content: flex-start;
+    #about-us {
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+    .recipe-finder-header {
+        color: green;
     }
 }
