@@ -7,6 +7,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
+    /* justify-content: space-between; */
   }
 
   .brand-logo-header {
@@ -37,12 +38,42 @@ nav {
   display: inline-block;
 }
 
+.recipe-finder-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 #recipe-finder-header {
 
 }
 
 .input-location {
   
+}
+
+#recipe-api {
+  display: flex;
+  justify-content: space-between;
+}
+
+#weather-side {
+  flex-basis: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#food-side {
+  flex-basis: 60%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#instructions-holder {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 #your-search {
