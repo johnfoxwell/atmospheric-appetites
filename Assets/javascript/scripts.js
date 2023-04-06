@@ -57,14 +57,6 @@ getButton.addEventListener("click", function (event) {
         var myDesc = document.createElement("p");
         var myTemp = document.createElement("p");
 
-        if (data.main.temp > 60) {
-          console.log("hot");
-          inputTemp = "hot";
-          return inputTemp;
-        } else {
-          console.log("cold");
-        }
-
         myCity.textContent = data.name;
         myDesc.textContent = data.weather[0].description;
         myTemp.textContent = data.main.temp;
@@ -74,6 +66,14 @@ getButton.addEventListener("click", function (event) {
         displayWeather.append(
           "The temperature in " + city + " is " + data.main.temp + " degress"
         );
+
+        if (data.main.temp > 60) {
+          console.log("hot");
+          inputTemp = "hot";
+          return inputTemp;
+        } else {
+          console.log("cold");
+        }
       });
   }
 
