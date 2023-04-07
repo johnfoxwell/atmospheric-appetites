@@ -24,11 +24,13 @@ nav {
 }
 
 #about-us {
-  color: neutral;
-  margin: 0px;
-  padding-left: 500px;
-  padding-right: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   font-size: 200%;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 
 .indent {
@@ -54,6 +56,8 @@ nav {
 
 #recipe-api {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #weather-side {
@@ -89,9 +93,18 @@ nav {
   color: black;
 }
 
+.logo-image-header {
+  width: 50%;
+  height: auto;
+}
 
+#instructId {
+  font-size: 120%
+}
 
-
+#recipeId {
+  font-size: 120%
+}
 
 
 
@@ -196,7 +209,7 @@ font-family: 'Dancing Script', cursive;
 font-family: 'Great Vibes', cursive;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1200px){
+@media screen and (min-width: 481px) and (max-width: 1600px){
   body {
       margin: auto;
     }
@@ -208,9 +221,12 @@ font-family: 'Great Vibes', cursive;
   .recipe-finder-header {
       color: green;
   }
-}
 
-.logo-image-header {
-  width: 50%; /* Adjust this value as needed */
-  height: auto;
+  #instructions-holder {
+    font-size: 150%;
+  }
+  #foodImg {
+    margin: auto;
+    border: 5px solid blue;
+  }
 }
