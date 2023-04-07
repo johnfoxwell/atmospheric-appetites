@@ -56,16 +56,28 @@ getButton.addEventListener("click", function (event) {
         var myCity = document.createElement("h3");
         var myDesc = document.createElement("p");
         var myTemp = document.createElement("p");
+        var myFeels = document.createElement("p");
+        var myHum = document.createElement("p");
+        var myWind = document.createElement("p");
+        var myIcon = document.createElement("img");
 
         myCity.textContent = data.name;
         myDesc.textContent = data.weather[0].description;
         myTemp.textContent = data.main.temp;
+        myFeels.textContet = data.main.feels_like;
+        myHum.textContet = data.main.humidity;
+        myWind.textContet = data.wind.speed;
+        myIcon.setAttribute("src", "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png");
+
+
 
         displayWeather.append(myCity);
-        displayWeather.append(myDesc);
-        displayWeather.append(
-          "The temperature in " + city + " is " + data.main.temp + " degress"
-        );
+        displayWeather.append("The weather looks to be " + data.weather[0].description + " today");
+        displayWeather.append("The tempature is " + data.main.temp + " degrees but it feels like " + data.main.feels_like);
+        displayWeather.append("The humidity is " + data.main.humidity + "%")
+        displayWeather.append("The wind speed is " + data.wind.speed + "mph")
+        displayWeather.append(myIcon);
+
 
         if (data.main.temp > 60) {
           console.log("hot");
