@@ -14,10 +14,6 @@ main {
     justify-content: center;
   }
 
-nav {
-    
-}
-
 .brand-logo {
   display: inline-block;
   margin: 2px 0px 0px 10px;
@@ -61,9 +57,11 @@ nav {
 }
 
 #weather-side {
-  flex-basis: 40%;
+  flex-basis: 100%;
   padding: 20px;
   box-sizing: border-box;
+  border: 10px solid black;
+  margin-bottom: 20px;
 }
 
 #food-side {

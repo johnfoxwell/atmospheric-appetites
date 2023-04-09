@@ -36,8 +36,16 @@ var coldMealId = [
   "52997",
 ];
 
+function clearPreviousResults() {
+  displayWeather.innerHTML = "";
+  displayFood.innerHTML = "";
+  instructId.innerHTML = "";
+  foodImg.innerHTML = "";
+}
+
 getButton.addEventListener("click", function (event) {
   event.preventDefault();
+  clearPreviousResults();
   var place = document.getElementById("your-search").value;
   var city = place;
 
