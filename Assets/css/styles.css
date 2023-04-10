@@ -207,7 +207,7 @@ font-family: 'Dancing Script', cursive;
 font-family: 'Great Vibes', cursive;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1600px){
+@media screen and (min-width: 100px) and (max-width: 1600px){
   body {
       margin: auto;
     }
